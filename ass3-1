@@ -24,10 +24,6 @@ namespace BankAccount
             p1.balance = p1.Type(p1.amount,p1.TransactionType);
             Console.WriteLine("After Transaction");
             p1.ShowData();
-            Student s1 = new Student(1203, "Brahmaji", "4th year", "Eee", "3");
-            S1.Getmarks();
-            s1.DisplayResult();
-            s1.DisplatData();
             Console.ReadLine();   
          }
         public program(int num,string actype,string nme)
