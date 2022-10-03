@@ -13,7 +13,7 @@ namespace BankAccount
 
          public static void Main(string[] args)
          {
-            program p1 = new program(0.1f "Savings","Harish");
+            program p1 = new program(0.1f "Savings","Brahmaji");
             p1.amount = 0.1f;
             p1.balance = 20000.00f;
             p1.showData();
