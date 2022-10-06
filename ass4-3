@@ -1,0 +1,29 @@
+using System;
+
+namespace Ass4
+{
+    class StringChar
+    {
+        public static void Main()
+        {
+            string str;
+            char ch;
+            Console.Write("Enter the string : ");
+            str = Console.ReadLine();
+            Console.Write("Enter the Character");
+            ch = Convert.ToChar(Console.ReadLine());
+            int freq = 0;
+            foreach (char c in str)
+            {
+                if (c == ch)
+                {
+                    freq++;
+                }
+            }
+            Console.WriteLine(freq);
+            Console.ReadLine();
+        }
+
+    }
+    
+}
