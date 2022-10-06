@@ -1,0 +1,47 @@
+using System;
+
+namespace Ass4
+{
+    class SaleDetails
+    {
+        int SalesNo;
+        int ProductNo;
+        int Price;
+        int DateOfSale;
+        int Qty;
+        public int TotalAmount;
+
+        static void Main()
+        {
+            saledetails s = new saledetails(1,50,100,5,1);
+            s.ShowData();
+        }
+
+        public void Sales()
+        {
+            int Qty, Price;
+            Console.WriteLine("Enter the Qty");
+            Qty = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the Price");
+            Price = int.Parse(Console.ReadLine());
+            TotalAmount = Qty*Price;
+        }
+
+        public SaleDetails(int SalesNo, int ProductNo, int Qty, int DateOfSale, int Price)
+        {
+            this.SalesNo = SalesNo;
+            this.ProductNo = ProductNo;
+            this.Price =Price;
+            this.Qty = Qty;
+            this.DateOfSale = DateOfSale;
+        }
+
+        public void ShowData()
+        {
+            Console.WriteLine($"Qty : {Qty},salesNo : {SalesNo},ProductionNo : {ProductNo},Prize : {Price},DateOfSale : {DateOfSale},TotalAmount : {Qty*Prize}" );
+            Console.Read();
+        }
+
+    }
+
+}
