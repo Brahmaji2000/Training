@@ -1,0 +1,30 @@
+using System;
+
+namespace Ass4
+{
+    class Program
+    {   
+        public static void Main(string[] args)
+        {
+            Program p = new Program();
+            p.Display();
+        }
+
+        public void Display()
+        {
+            string FirstName, LastName;
+            string str1, str2;
+            Console.Write("Enter FirstName : ");
+            FirstName = Console.ReadLine();
+            Console.Write("Enter LastName : ");
+            LastName = Console.ReadLine();
+            str1 = FirstName.ToUpper();
+            str2 = LastName.ToUpper();
+            Console.WriteLine("Converted string is: " + str1);
+            Console.WriteLine("Converted string is: " + str2);
+            Console.Read();
+        }
+
+    }
+
+}
